@@ -1,0 +1,33 @@
+@mixin inconsolata {
+    font-family: $inconsolata;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@mixin background-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin background-contain {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin shadow {
+    -webkit-box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+@mixin vignette {
+    -webkit-box-shadow: inset 0px 0 20vw 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0px 0 20vw 5px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0 20vw 5px rgba(0, 0, 0, 0.1);
+}
+
+@mixin transition {
+    transition: all 0.2s ease-in;
+}

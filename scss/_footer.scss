@@ -1,0 +1,53 @@
+footer {
+    color: $light-grey-text;
+    text-align: center;
+    height: 70vh;
+    margin: 10vh 0;
+
+    .signature {
+        width: 100%;
+        max-width: 500px;
+        opacity: 0.2;
+    }
+
+    .message-me {
+        color: $light-grey-text;
+        text-align: left;
+        
+        @media (min-width: $break-sm) {
+            text-align: center
+        }
+    }
+
+    .social-links {
+        margin: 30px 0;
+
+        a {
+            @include transition;
+            color: $light-grey-text;
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+
+    .email-me {
+        @include transition;
+        color: $light-grey-text;
+        &.box-link {
+            border-color: $light-grey-text;
+        }
+        &:hover {
+            color: $black;
+            &.box-link {
+                border-color: $black;
+            }
+        }
+    }
+
+    .copyright {
+        position: relative;
+        bottom: -10vh;
+        font-size: 0.8em;
+    }
+}

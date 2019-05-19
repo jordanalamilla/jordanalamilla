@@ -1,0 +1,79 @@
+header {
+    margin: 8vh 0 15vh;
+    .intro {
+        max-width: 850px;
+    }
+}
+
+.code-projects {
+    &:hover {
+        .project-code {
+            opacity: 0.6;
+        }
+    }
+    .project-code {
+        @include shadow;
+        @include transition;
+        position: relative;
+        overflow: hidden;
+        height: 320px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+
+        &:hover {
+            margin-top: -3px;
+            opacity: 1;
+        }
+
+        .image {
+            @include background-cover;
+            width: 100%;
+            height: 35%;
+        }
+
+        .details {
+            padding: 40px 20px 15px;
+
+            div[class^=col-] {
+                padding: 0;
+                width: calc(50% - 30px);
+            }
+
+            .info {
+                font-family: $inconsolata;
+                letter-spacing: 1px;
+
+                .title {
+                    text-transform: uppercase;
+                }
+
+                .description {
+                    color: $dark-grey-text;
+                    line-height: 1.3;
+                }
+            }
+
+            .bottom-area {
+                &.container {
+                    padding: 15px;
+                }
+                position: absolute;
+                width: calc(100% - 40px);
+                bottom: 15px;
+
+                .buttons a {
+                    font-size: 0.8em;
+                }
+
+                .language {
+                    text-align: right;
+                    
+                    p{
+                        font-weight: 700;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+}

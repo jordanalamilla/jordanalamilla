@@ -1,0 +1,35 @@
+nav {
+    @include inconsolata;
+    height: fit-content;
+    position: relative;
+
+    .logo {
+        position: relative;
+        display: inline-block;
+        top: 50px;
+
+        @media (min-width: $break-lg) {
+            position: fixed;
+            display: block;
+            top: 40px;
+            left: 50px;
+        }
+
+        img {
+            max-width: 40px;
+        }
+    }
+    ul {
+        margin: 20px 0 50px 80px;
+        @media (min-width: $break-lg) {
+            margin: 50px 0;
+        }
+
+        li {
+            @include transition;
+            &:hover {
+                color: $light-grey-text;
+            }
+        }
+    }
+}
