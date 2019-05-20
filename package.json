@@ -9,9 +9,12 @@
   "author": "Jordan Alamilla",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
     "gulp-connect-php": "^1.0.3",
     "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "tar": "^4.4.8"
   }
 }
