@@ -1,4 +1,4 @@
-<?php include( 'partials/top.php' ); ?>
+<?php include( 'header.php' ); ?>
 
 <header class="container">
     <h1>Hi, I’m Jordan Alamilla.</h1>
@@ -100,4 +100,4 @@
     </div>
 </div>
     
-<?php include( 'partials/bottom.php' ); ?>
+<?php include( 'footer.php' ); ?>

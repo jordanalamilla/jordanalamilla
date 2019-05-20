@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 
     <?php wp_head(); ?>
-
 </head>
 <body class="container">
 <div class="row">
     <div class="col-lg-11 offset-lg-1">
-        <?php include( 'nav.php' ); ?>
+        <?php include( 'partials/nav.php' ); ?>
