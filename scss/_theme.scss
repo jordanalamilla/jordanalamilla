@@ -78,7 +78,7 @@
      margin: 10vh 0;
     &:hover {
         .project {
-            opacity: 0.6;
+            // opacity: 0.6;
         }
     }
 
@@ -96,7 +96,7 @@
 
         &:hover {
             margin-top: -3px;
-            opacity: 1;
+            // opacity: 1;
         }
 
         .image {
@@ -124,8 +124,8 @@
                 .description {
                     p {
                         @include small-text;
+                        // text-transform: uppercase;
                         color: $dark-grey-text;
-                        line-height: 1.3;
                     }
                 }
             }
