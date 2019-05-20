@@ -1,12 +1,13 @@
 <nav class="container">
     <div class="logo">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/site/logo.png">
+        <a href="/">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/site/logo.png">
+        </a>
     </div>
-    <ul class="inline-list">
-        <li>Story</li>
-        <li>Web</li>
-        <li>Art</li>
-        <li>Blog</li>
-        <li>Contact</li>
-    </ul>
+
+    <?php $args = [
+        'menu'          => 'main',
+        'menu_class'    => 'inline-list',
+    ];
+    wp_nav_menu( $args ); ?>
 </nav>
