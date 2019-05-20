@@ -5,7 +5,7 @@ if( $tech == 'PHP' ) { $theme = 'dark'; } ?>
 
 <!-- Open project -->
 <div class="col-12 col-md-6 col-lg-4">
-    <div class="<?php echo $theme; ?> project-code">
+    <div class="<?php echo $theme; ?> project project-code">
 
         <!-- Image -->
         <div class="image"

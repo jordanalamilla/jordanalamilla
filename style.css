@@ -76,7 +76,11 @@ h1 {
       font-size: 2.8em; } }
 
 h2, h3 {
-  font-weight: 900; }
+  font-weight: 400; }
+
+h2 {
+  font-size: 1.6em;
+  margin-bottom: 40px; }
 
 h3 {
   margin-bottom: 10px; }
@@ -122,6 +126,10 @@ a {
     margin-left: 0; }
   .inline-list li:lastst-child {
     margin-right: 0; }
+
+.text-center {
+  display: block;
+  text-align: center; }
 
 ::selection {
   background-color: #ecdede; }
@@ -180,64 +188,95 @@ body {
   border-radius: 12px; }
 
 .box-link {
+  font-family: "Inconsolata", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   display: inline-block;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 5px 7px; }
 
 /*
- * Web projects
+ * Galleries
  */
-.code-projects:hover .project-code {
-  opacity: 0.6; }
-
-.code-projects .project-code {
-  -webkit-box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s ease-in;
-  position: relative;
-  overflow: hidden;
-  height: 320px;
-  border-radius: 20px;
-  margin-bottom: 30px; }
-  .code-projects .project-code:hover {
-    margin-top: -3px;
-    opacity: 1; }
-  .code-projects .project-code .image {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 35%; }
-  .code-projects .project-code .details {
-    padding: 40px 20px 15px; }
-    .code-projects .project-code .details div[class^=col-] {
-      padding: 0;
-      width: calc(50% - 30px); }
-    .code-projects .project-code .details .info {
-      font-family: "Inconsolata", sans-serif;
-      letter-spacing: 1px; }
-      .code-projects .project-code .details .info .title {
-        text-transform: uppercase; }
-      .code-projects .project-code .details .info .description p {
-        font-weight: 300;
-        font-size: 0.8em;
-        line-height: 1.5;
-        color: #777;
-        line-height: 1.3; }
-    .code-projects .project-code .details .bottom-area {
-      position: absolute;
-      width: calc(100% - 40px);
-      bottom: 15px; }
-      .code-projects .project-code .details .bottom-area.container {
-        padding: 15px; }
-      .code-projects .project-code .details .bottom-area .buttons a {
-        font-size: 0.8em; }
-      .code-projects .project-code .details .bottom-area .language {
-        text-align: right; }
-        .code-projects .project-code .details .bottom-area .language p {
-          font-weight: 700;
-          font-size: 1em; }
+.project-gallery {
+  margin: 10vh 0;
+  /*
+     * Web projects
+     */
+  /*
+     * Art projects
+     */ }
+  .project-gallery:hover .project {
+    opacity: 0.6; }
+  .project-gallery .project-code {
+    -webkit-box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    height: 320px;
+    border-radius: 20px;
+    margin-bottom: 30px; }
+    .project-gallery .project-code:hover {
+      margin-top: -3px;
+      opacity: 1; }
+    .project-gallery .project-code .image {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 35%; }
+    .project-gallery .project-code .details {
+      padding: 40px 20px 15px; }
+      .project-gallery .project-code .details div[class^=col-] {
+        padding: 0;
+        width: calc(50% - 30px); }
+      .project-gallery .project-code .details .info {
+        font-family: "Inconsolata", sans-serif;
+        letter-spacing: 1px; }
+        .project-gallery .project-code .details .info .title {
+          text-transform: uppercase; }
+        .project-gallery .project-code .details .info .description p {
+          font-weight: 300;
+          font-size: 0.8em;
+          line-height: 1.5;
+          color: #777;
+          line-height: 1.3; }
+      .project-gallery .project-code .details .bottom-area {
+        position: absolute;
+        width: calc(100% - 40px);
+        bottom: 15px; }
+        .project-gallery .project-code .details .bottom-area.container {
+          padding: 15px; }
+        .project-gallery .project-code .details .bottom-area .buttons a {
+          font-size: 0.8em; }
+        .project-gallery .project-code .details .bottom-area .language {
+          text-align: right; }
+          .project-gallery .project-code .details .bottom-area .language p {
+            font-weight: 700;
+            font-size: 1em; }
+  .project-gallery .project-art {
+    transition: all 0.2s ease-in;
+    position: relative;
+    border-radius: 0;
+    margin-bottom: 30px; }
+    .project-gallery .project-art:hover {
+      margin-top: -3px;
+      opacity: 1; }
+    .project-gallery .project-art .image {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 320px; }
+    .project-gallery .project-art div.info {
+      margin-top: 20px; }
+      .project-gallery .project-art div.info ul.details li {
+        font-family: "Inconsolata", sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 5px 0; }
 
 nav {
   font-family: "Inconsolata", sans-serif;
