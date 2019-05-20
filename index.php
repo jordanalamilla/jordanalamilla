@@ -1,13 +1,15 @@
 <?php include( 'header.php' ); ?>
 
-<header class="container">
-    <h1>Hi, I’m Jordan Alamilla.</h1>
-    <p class="big-text intro">
-        I’m a web developer living and working in Newmarket, Ontario at <a href="https://rcdesign.com/">RC Design</a>. I’m also a traditional and digital art hobbyist. Whether I’m building a website or creating new artwork, the same care and attention to detail goes into all of my projects. Welcome to my portfolio.
-    </p>
-</header>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<div class="container code-projects">
+    <header class="container">
+        <h1><?php the_title(); ?></h1>
+        <p class="big-text intro">
+            <?php the_content(); ?>
+        </p>
+    </header>
+
+    <div class="container code-projects">
 
         <!-- Args -->
         <?php $args = [
@@ -17,7 +19,7 @@
 
         // Query
         $the_query = new WP_Query( $args );
-            if ( $the_query->have_posts() ) : ?>
+        if ( $the_query->have_posts() ) : ?>
 
             <div class="row">
 
@@ -32,6 +34,8 @@
 
         <?php wp_reset_postdata(); endif; ?>
 
-</div> <!-- Close gallery -->
+    </div> <!-- Close gallery -->
+
+<?php endwhile; endif; ?>
     
 <?php include( 'footer.php' ); ?>
