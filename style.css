@@ -134,14 +134,14 @@ a {
 ::selection {
   background-color: #ecdede; }
 
-body {
+html body {
   color: #222;
   background-color: #FCFCFC;
   min-height: 100vh; }
-  body.container {
+  html body.container {
     max-width: 1240px; }
     @media (min-width: 1441px) {
-      body.container {
+      html body.container {
         max-width: 1440px; } }
 
 .light {

@@ -2,17 +2,19 @@
     background-color: #ecdede;
 }
 
-body {
-    &.container {
-        max-width: 1240px;
-
-        @media (min-width: $break-xxl) {
-            max-width: 1440px;
-        }
-    }
-
+html {
     // @include vignette;
-    color: $black;
-    background-color: $light;
-    min-height: 100vh;
+
+    body {
+        &.container {
+            max-width: 1240px;
+
+            @media (min-width: $break-xxl) {
+                max-width: 1440px;
+            }
+        }
+        color: $black;
+        background-color: $light;
+        min-height: 100vh;
+    }
 }
