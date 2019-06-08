@@ -1,0 +1,125 @@
+/*
+ * Galleries
+ */
+.project-gallery {
+    margin: 10vh auto;
+
+    &:hover {
+        .project {
+            opacity: 0.6;
+        }
+    }
+
+    /*
+     * Web projects
+     */
+    .project-code {
+        @include shadow;
+        @include transition;
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+
+        &:hover {
+            margin-top: -3px;
+            opacity: 1;
+        }
+
+        .image {
+            @include background-cover;
+            width: 100%;
+            height: 35%;
+        }
+
+        .details {
+            padding: 40px 20px 15px;
+
+            div[class^=col-] {
+                padding: 0;
+                width: calc(50% - 30px);
+            }
+
+            .info {
+                letter-spacing: 1px;
+
+                .title {
+                    font-family: $inconsolata;
+                    text-transform: uppercase;
+                }
+
+                .description {
+                    p {
+                        @include small-text;
+                        // text-transform: uppercase;
+                        color: $dark-grey-text;
+                    }
+                }
+            }
+
+            .bottom-area {
+                &.container {
+                    padding: 15px;
+                }
+
+                position: absolute;
+                width: calc(100% - 40px);
+                bottom: 15px;
+
+                .buttons a {
+                    font-size: 0.8em;
+                }
+
+                .language {
+                    text-align: right;
+
+                    p {
+                        font-weight: 700;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+
+    /*
+     * Art projects
+     */
+    .project-art {
+        @include transition;
+        position: relative;
+        border-radius: 0;
+        margin-bottom: 30px;
+
+        &:hover {
+            margin-top: -3px;
+            opacity: 1;
+        }
+
+        .image {
+            @include background-cover;
+            width: 100%;
+            height: 320px;
+        }
+
+        div.info {
+            margin-top: 20px;
+
+            ul.details {
+                li {
+                    @include inconsolata;
+                    margin: 5px 0;
+
+                    &.title {
+
+                    }
+
+                    &.date {
+
+                    }
+                }
+            }
+        }
+    }
+}
