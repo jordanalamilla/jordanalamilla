@@ -9,7 +9,7 @@ if( $tech == 'PHP' ) { $theme = 'dark'; } ?>
 
         <!-- Image -->
         <div class="image"
-                style="background-image: url('<?php the_post_thumbnail_url(); ?>'"></div>
+             style="background-image: url('<?php the_post_thumbnail_url(); ?>'"></div>
 
         <!-- Details -->
         <div class="details">

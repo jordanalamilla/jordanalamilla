@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Jordan Alamilla
 Author: Jordan Alamilla
@@ -104,13 +105,13 @@ p {
   p a {
     transition: all 0.2s ease-in;
     padding-bottom: 3px;
-    border-bottom: 1px dotted #794141; }
+    border-bottom: 1px dotted #e6656a; }
     p a:hover {
       color: #AAA; }
 
 a {
   text-decoration: none;
-  color: #222; }
+  color: #111; }
 
 .small-text {
   font-weight: 300;
@@ -121,10 +122,10 @@ a {
   display: inline-block;
   height: 20px;
   margin: 0 10px;
-  color: #222; }
+  color: #111; }
   .inline-list li:first-child {
     margin-left: 0; }
-  .inline-list li:lastst-child {
+  .inline-list li:last-child {
     margin-right: 0; }
 
 .text-center {
@@ -135,7 +136,7 @@ a {
   background-color: #ecdede; }
 
 html body {
-  color: #222;
+  color: #111;
   background-color: #FCFCFC;
   min-height: 100vh; }
   html body.container {
@@ -150,36 +151,26 @@ html body {
 .light {
   background-color: #FFF; }
   .light.project-code .title {
-    color: #222; }
-  .light .btn-code-primary {
-    background-color: #e3cfcf;
-    color: #736060; }
-    .light .btn-code-primary:hover {
-      background-color: #d1bfbf;
-      color: #534545; }
+    color: #111; }
+  .light .btn-code-primary,
   .light .btn-code-secondary {
-    background-color: #e4e4e4;
-    color: #6e6e6e; }
-    .light .btn-code-secondary:hover {
-      background-color: #cfcfcf;
-      color: #585858; }
+    color: #111; }
+  .light .btn-code-primary:hover {
+    color: #6f0f0f; }
+  .light .btn-code-secondary:hover {
+    color: #777; }
 
 .dark {
-  background-color: #222; }
+  background-color: #111; }
   .dark.project-code .title, .dark.project-code .language {
     color: #FCFCFC; }
-  .dark .btn-code-primary {
-    background-color: #794141;
-    color: #d0b3b3; }
-    .dark .btn-code-primary:hover {
-      background-color: #995353;
-      color: #e7c7c7; }
+  .dark .btn-code-primary,
   .dark .btn-code-secondary {
-    background-color: #3d3d3d;
-    color: #aaa; }
-    .dark .btn-code-secondary:hover {
-      background-color: #5e5e5e;
-      color: #c5c5c5; }
+    color: #FFF; }
+  .dark .btn-code-primary:hover {
+    color: #e6656a; }
+  .dark .btn-code-secondary:hover {
+    color: #AAA; }
 
 .btn-code-primary,
 .btn-code-secondary {
@@ -187,8 +178,11 @@ html body {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
-  padding: 13px 15px;
   border-radius: 12px; }
+
+.btn-code-primary::after {
+  content: '●';
+  padding: 0 10px; }
 
 .box-link {
   font-family: "Inconsolata", sans-serif;
@@ -202,13 +196,15 @@ html body {
  * Galleries
  */
 .project-gallery {
-  margin: 10vh 0;
+  margin: 10vh auto;
   /*
      * Web projects
      */
   /*
      * Art projects
      */ }
+  .project-gallery:hover .project {
+    opacity: 0.6; }
   .project-gallery .project-code {
     -webkit-box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
@@ -216,11 +212,12 @@ html body {
     transition: all 0.2s ease-in;
     position: relative;
     overflow: hidden;
-    height: 320px;
+    height: 300px;
     border-radius: 20px;
     margin-bottom: 30px; }
     .project-gallery .project-code:hover {
-      margin-top: -3px; }
+      margin-top: -3px;
+      opacity: 1; }
     .project-gallery .project-code .image {
       background-size: cover;
       background-position: center;
@@ -233,9 +230,9 @@ html body {
         padding: 0;
         width: calc(50% - 30px); }
       .project-gallery .project-code .details .info {
-        font-family: "Inconsolata", sans-serif;
         letter-spacing: 1px; }
         .project-gallery .project-code .details .info .title {
+          font-family: "Inconsolata", sans-serif;
           text-transform: uppercase; }
         .project-gallery .project-code .details .info .description p {
           font-weight: 300;
@@ -291,7 +288,6 @@ nav {
       nav .logo {
         position: fixed;
         display: block;
-        top: 75px;
         left: 50px; } }
     nav .logo img {
       max-width: 40px; }
@@ -331,16 +327,16 @@ footer {
       transition: all 0.2s ease-in;
       color: #AAA; }
       footer .social-links a:hover {
-        color: #222; }
+        color: #111; }
   footer .email-me {
     transition: all 0.2s ease-in;
     color: #AAA; }
     footer .email-me.box-link {
       border-color: #AAA; }
     footer .email-me:hover {
-      color: #222; }
+      color: #111; }
       footer .email-me:hover.box-link {
-        border-color: #222; }
+        border-color: #111; }
   footer .copyright {
     position: relative;
     bottom: -10vh;

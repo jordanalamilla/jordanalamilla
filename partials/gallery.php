@@ -6,16 +6,20 @@ if ( $the_query->have_posts() ) : ?>
 
         <!-- Open web gallery -->
         <div class="container project-gallery">
-            <h2>Latest Web Projects</h2>
+
+            <?php if( is_front_page() ) : ?>
+                <h2>Latest Web Projects</h2>
+            <?php endif; ?>
+
             <div class="row">
 
                 <!-- Loop -->
                 <?php while ( $the_query->have_posts() ) : $the_query->the_post();
 
                     // Web project
-                    include( 'web-project.php' );    
+                    include( 'web-project.php' );
 
-                endwhile; wp_reset_postdata(); ?><!-- Close Loop -->
+                wp_reset_postdata(); endwhile; ?><!-- Close Loop -->
 
             </div>
 
@@ -30,25 +34,29 @@ if ( $the_query->have_posts() ) : ?>
 
         <!-- Open art gallery -->
         <div class="container project-gallery">
-            <h2>Latest Art Projects</h2>
+
+            <?php if( is_front_page() ) : ?>
+                <h2>Latest Art Projects</h2>
+            <?php endif; ?>
+
             <div class="row">
 
                 <!-- Loop -->
                 <?php while ( $the_query->have_posts() ) : $the_query->the_post();
 
-                    // Web project
-                    include( 'art-project.php' );    
+                    // Art project
+                    include( 'art-project.php' );
 
-                endwhile; wp_reset_postdata(); ?><!-- Close Loop -->
+                wp_reset_postdata(); endwhile; ?><!-- Close Loop -->
 
             </div>
 
             <!-- Browse work -->
             <?php if( is_front_page() ) : ?>
-                <div class="row text-center"><a class="box-link" href="#">Browse My Work</a></div>
+                <div class="row text-center"><a class="box-link" href="#">Browse My Art</a></div>
             <?php endif; ?>
 
-        </div> <!-- Close web gallery -->
+        </div><!-- Close web gallery -->
 
     <?php endif; ?>
 <?php endif; ?>

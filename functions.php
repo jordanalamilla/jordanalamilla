@@ -1,9 +1,13 @@
 <?php
 
-/* * Enable thumbnails */
+/*
+ * Enable thumbnails
+ */
 add_theme_support( 'post-thumbnails' );
 
-/* * Enable menus */
+/*
+ * Enable menus
+ */
 add_theme_support( 'menus' );
 
 /*

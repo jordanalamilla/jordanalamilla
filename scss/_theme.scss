@@ -6,23 +6,17 @@
             color: $black;
         }
     }
-    .btn-code-primary{
-        background-color: #e3cfcf;
-        color: #736060;
-    
-        &:hover {
-            background-color: #d1bfbf;
-            color: #534545;
-        }
+    .btn-code-primary,
+    .btn-code-secondary {
+        color: $black;
     }
-    .btn-code-secondary{
-        background-color: #e4e4e4;
-        color: #6e6e6e;
-    
-        &:hover {
-            background-color: #cfcfcf;
-            color: #585858;
-        }
+
+    .btn-code-primary:hover {
+        color: $dark-red;
+    }
+
+    .btn-code-secondary:hover {
+        color: $dark-grey-text;
     }
 }
 
@@ -34,23 +28,17 @@
             color: $light;
         }
     }
-    .btn-code-primary{
-        background-color: #794141;
-        color: #d0b3b3;
-    
-        &:hover {
-            background-color: #995353;
-            color: #e7c7c7;
-        }
+    .btn-code-primary,
+    .btn-code-secondary {
+        color: $white;
     }
-    .btn-code-secondary{
-        background-color: #3d3d3d;
-        color: #aaa;
-    
-        &:hover {
-            background-color: #5e5e5e;
-            color: rgb(197, 197, 197);
-        }
+
+    .btn-code-primary:hover {
+        color: $light-red;
+    }
+
+    .btn-code-secondary:hover {
+        color: $light-grey-text;
     }
 }
 
@@ -60,8 +48,11 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
-    padding: 13px 15px;
     border-radius: 12px;
+}
+.btn-code-primary::after {
+    content: '●';
+    padding: 0 10px;
 }
 
 .box-link {
@@ -75,10 +66,10 @@
  * Galleries
  */
  .project-gallery {
-     margin: 10vh 0;
+     margin: 10vh auto;
     &:hover {
         .project {
-            // opacity: 0.6;
+             opacity: 0.6;
         }
     }
 
@@ -90,13 +81,13 @@
         @include transition;
         position: relative;
         overflow: hidden;
-        height: 320px;
+        height: 300px;
         border-radius: 20px;
         margin-bottom: 30px;
 
         &:hover {
             margin-top: -3px;
-            // opacity: 1;
+             opacity: 1;
         }
 
         .image {
@@ -114,10 +105,10 @@
             }
 
             .info {
-                font-family: $inconsolata;
                 letter-spacing: 1px;
 
                 .title {
+                    font-family: $inconsolata;
                     text-transform: uppercase;
                 }
 

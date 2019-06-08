@@ -55,7 +55,7 @@ p {
     a {
         @include transition;
         padding-bottom: 3px;
-        border-bottom: 1px dotted $red;
+        border-bottom: 1px dotted $light-red;
 
         &:hover {
             color: $light-grey-text;
@@ -84,7 +84,7 @@ a {
         &:first-child {
             margin-left: 0;
         }
-        &:lastst-child {
+        &:last-child {
             margin-right: 0;
         }
     }
