@@ -1,6 +1,4 @@
-( () => {
-
-    const $ = jQuery;
+( () => { const $ = jQuery;
 
     /**
      * Project hover effect

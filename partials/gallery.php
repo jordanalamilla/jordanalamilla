@@ -37,6 +37,8 @@ if ( $the_query->have_posts() ) : ?>
 
             <?php if( is_front_page() ) : ?>
                 <h2>Latest Art Projects</h2>
+            <?php else : ?>
+                <h2><?php echo get_cat_name( $args[ 'cat' ] ); ?></h2>
             <?php endif; ?>
 
             <div class="row">

@@ -1,15 +1,19 @@
 <?php // Set the theme
-$tech   = get_field( 'web_tech' );
-$theme  = 'light';
-if( $tech == 'PHP' ) { $theme = 'dark'; } ?>
+$tech  = get_field( 'web_tech' );
+$theme = 'light';
+if ( $tech == 'PHP' ) {
+	$theme = 'dark';
+} ?>
 
 <!-- Open project -->
 <div class="col-12 col-md-6 col-lg-4">
     <div class="<?php echo $theme; ?> project project-code">
 
         <!-- Image -->
-        <div class="image"
-             style="background-image: url('<?php the_post_thumbnail_url(); ?>'"></div>
+        <a href="<?php the_permalink(); ?>">
+            <div class="image"
+                 style="background-image: url('<?php the_post_thumbnail_url(); ?>'"></div>
+        </a>
 
         <!-- Details -->
         <div class="details">

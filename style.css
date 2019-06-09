@@ -58,79 +58,70 @@ table {
  * Typography
  */
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px; }
-
-h1 {
-  font-weight: 300;
-  font-size: 1.8em;
-  line-height: 1.5;
-  margin-bottom: 40px; }
-  @media (min-width: 567px) {
-    h1 {
-      font-size: 2em; } }
-  @media (min-width: 768px) {
-    h1 {
-      font-size: 2.4em; } }
-  @media (min-width: 991px) {
-    h1 {
-      font-size: 2.8em; } }
-
-h2, h3 {
-  font-weight: 400; }
-
-h2 {
-  font-size: 1.6em;
-  margin-bottom: 40px; }
-
-h3 {
-  margin-bottom: 10px; }
-
-h4, h5, h6 {
-  font-weight: 400; }
-
-p {
-  font-weight: 300;
-  font-size: 1em;
-  line-height: 2; }
-  @media (min-width: 567px) {
-    p {
-      font-size: 1.2em; } }
-  @media (min-width: 768px) {
-    p {
-      font-size: 1.4em; } }
-  @media (min-width: 991px) {
-    p {
-      font-size: 1.6em; } }
-  p a {
-    transition: all 0.2s ease-in;
-    padding-bottom: 3px;
-    border-bottom: 1px dotted #e6656a; }
-    p a:hover {
-      color: #AAA; }
-
-a {
-  text-decoration: none;
-  color: #111; }
-
-.small-text {
-  font-weight: 300;
-  font-size: 0.8em;
-  line-height: 1.5; }
-
-.inline-list li {
-  display: inline-block;
-  height: 20px;
-  margin: 0 10px;
-  color: #111; }
-  .inline-list li:first-child {
-    margin-left: 0; }
-  .inline-list li:last-child {
-    margin-right: 0; }
-
-.text-center {
-  display: block;
-  text-align: center; }
+  font-family: "Roboto", sans-serif; }
+  body:not(.wp-admin) {
+    font-size: 16px; }
+    body:not(.wp-admin) h1 {
+      font-weight: 300;
+      font-size: 1.8em;
+      line-height: 1.5;
+      margin-bottom: 40px; }
+      @media (min-width: 567px) {
+        body:not(.wp-admin) h1 {
+          font-size: 2em; } }
+      @media (min-width: 768px) {
+        body:not(.wp-admin) h1 {
+          font-size: 2.4em; } }
+      @media (min-width: 991px) {
+        body:not(.wp-admin) h1 {
+          font-size: 2.8em; } }
+    body:not(.wp-admin) h2, body:not(.wp-admin) h3 {
+      font-weight: 400; }
+    body:not(.wp-admin) h2 {
+      font-size: 1.6em;
+      margin-bottom: 40px; }
+    body:not(.wp-admin) h3 {
+      margin-bottom: 10px; }
+    body:not(.wp-admin) h4, body:not(.wp-admin) h5, body:not(.wp-admin) h6 {
+      font-weight: 400; }
+    body:not(.wp-admin) p {
+      font-weight: 300;
+      font-size: 1em;
+      line-height: 2; }
+      @media (min-width: 567px) {
+        body:not(.wp-admin) p {
+          font-size: 1.2em; } }
+      @media (min-width: 768px) {
+        body:not(.wp-admin) p {
+          font-size: 1.4em; } }
+      @media (min-width: 991px) {
+        body:not(.wp-admin) p {
+          font-size: 1.6em; } }
+      body:not(.wp-admin) p a {
+        transition: all 0.2s ease-in;
+        padding-bottom: 3px;
+        border-bottom: 1px dotted #e6656a; }
+        body:not(.wp-admin) p a:hover {
+          color: #AAA; }
+    body:not(.wp-admin) a {
+      text-decoration: none;
+      color: #111; }
+    body:not(.wp-admin) .small-text {
+      font-weight: 300;
+      font-size: 0.8em;
+      line-height: 1.5; }
+    body:not(.wp-admin) .inline-list li {
+      display: inline-block;
+      height: 20px;
+      margin: 0 10px;
+      color: #111; }
+      body:not(.wp-admin) .inline-list li:first-child {
+        margin-left: 0; }
+      body:not(.wp-admin) .inline-list li:last-child {
+        margin-right: 0; }
+    body:not(.wp-admin) .text-center {
+      display: block;
+      text-align: center; }
 
 ::selection {
   color: #000;
@@ -214,8 +205,6 @@ html body {
     height: 300px;
     border-radius: 20px;
     margin-bottom: 30px; }
-    .project-gallery .project-code:hover {
-      margin-top: -3px; }
     .project-gallery .project-code .image {
       background-size: cover;
       background-position: center;
@@ -255,9 +244,6 @@ html body {
     position: relative;
     border-radius: 0;
     margin-bottom: 30px; }
-    .project-gallery .project-art:hover {
-      margin-top: -3px;
-      opacity: 1; }
     .project-gallery .project-art .image {
       background-size: cover;
       background-position: center;
