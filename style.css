@@ -133,6 +133,7 @@ a {
   text-align: center; }
 
 ::selection {
+  color: #000;
   background-color: #ecdede; }
 
 html body {
