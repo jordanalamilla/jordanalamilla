@@ -203,8 +203,6 @@ html body {
   /*
      * Art projects
      */ }
-  .project-gallery:hover .project {
-    opacity: 0.6; }
   .project-gallery .project-code {
     -webkit-box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
@@ -216,8 +214,7 @@ html body {
     border-radius: 20px;
     margin-bottom: 30px; }
     .project-gallery .project-code:hover {
-      margin-top: -3px;
-      opacity: 1; }
+      margin-top: -3px; }
     .project-gallery .project-code .image {
       background-size: cover;
       background-position: center;
