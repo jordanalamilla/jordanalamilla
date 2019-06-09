@@ -25,7 +25,7 @@ if ( $the_query->have_posts() ) : ?>
 
             <!-- Browse work -->
             <?php if( is_front_page() ) : ?>
-                <div class="row text-center"><a class="box-link" href="#">Browse My Work</a></div>
+                <div class="row text-center"><a class="box-link" href="/web">Browse My Work</a></div>
             <?php endif; ?>
 
         </div><!-- Close web gallery -->
@@ -53,7 +53,7 @@ if ( $the_query->have_posts() ) : ?>
 
             <!-- Browse work -->
             <?php if( is_front_page() ) : ?>
-                <div class="row text-center"><a class="box-link" href="#">Browse My Art</a></div>
+                <div class="row text-center"><a class="box-link" href="/art">Browse My Art</a></div>
             <?php endif; ?>
 
         </div><!-- Close web gallery -->
